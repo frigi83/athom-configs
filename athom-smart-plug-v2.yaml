@@ -31,7 +31,7 @@ substitutions:
   # Specifies whether pins should be initialised as early as possible to known values. Recommended value is false where switches are involved, as these will toggle when updating the firmware or when restarting the device. Defaults to true.
   early_pin_init: "true"
   # Power plug icon selection. Change to reflect the type/country of powr plug in use, this will update the power plug icon shown next to the switch
-  power_plug_type: "power-socket-us"  # Options: power-socket-au | power-socket-ch | power-socket-de | power-socket-eu | power-socket-fr | power-socket-it | power-socket-jp | power-socket-uk | power-socket-us |
+  power_plug_type: "power-socket-ch"  # Options: power-socket-au | power-socket-ch | power-socket-de | power-socket-eu | power-socket-fr | power-socket-it | power-socket-jp | power-socket-uk | power-socket-us |
 
 
 ########################## End of Substitutions #########################
@@ -89,8 +89,8 @@ logger:
 mdns:
   disabled: false
 
-web_server:
-  port: 80
+# web_server:
+#  port: 80
 #  version: 3
 
 network:
@@ -104,10 +104,10 @@ wifi:
   # Define dns domain / suffix to add to hostname
   domain: "${dns_domain}"
 
-captive_portal:
+# captive_portal:
 
-dashboard_import:
-  package_import_url: github://athom-tech/athom-configs/athom-smart-plug-v2.yaml
+# dashboard_import:
+#  package_import_url: github://athom-tech/athom-configs/athom-smart-plug-v2.yaml
 
 # Dentra Components - Adds 'Platform - Energy Statistics'
 # https://github.com/dentra/esphome-components/tree/master/components/energy_statistics
